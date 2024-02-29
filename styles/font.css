@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "senpai-icons";
+  src: url("../fonts/senpai-icons.eot?ocpp8");
+  src: url("../fonts/senpai-icons.eot?ocpp8#iefix")
+      format("embedded-opentype"),
+    url("../fonts/senpai-icons.ttf?ocpp8") format("truetype"),
+    url("../fonts/senpai-icons.woff?ocpp8") format("woff"),
+    url("../fonts/senpai-icons.svg?ocpp8#senpai-icons")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  font-family: "senpai-icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e911";
+}
+
+.icon-arrow-right:before {
+  content: "\e913";
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SenpAI</title>
+    <link rel="stylesheet" type="text/css" href="./styles/font.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/titleBar.css" />
+    <style>
+      body {
+        background-color: #0a101c;
+      }
+      .no-internet {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .no-internet h1 {
+        font-weight: bold;
+        font-size: 30px;
+        color: #eaeaea;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      .no-internet p {
+        font-size: 18px;
+        color: #93beff;
+        line-height: 1.3;
+        padding-right: 2rem;
+        font-weight: 300;
+        padding-bottom: 10px;
+      }
+      .no-internet .left {
+        flex-direction: column;
+      }
+      .no-internet .right {
+        flex: 0 0 auto;
+        width: 200px;
+      }
+      .no-internet .right img {
+        width: 100%;
+      }
+      .no-internet button {
+        background-color: #3561e5;
+        border-color: #3561e5;
+        min-height: 50px;
+        border-radius: 6px;
+        padding: 0.5rem 2rem;
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .no-internet button:hover,
+      .no-internet button:focus {
+        filter: brightness(110%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="title-bar" class="electron-bar"></div>
+    <div class="no-internet">
+      <div class="left">
+        <div id="text-en">
+          <img
+            style="border-radius: 50%; height: 1.4rem"
+            src="./images/us.svg"
+          />
+          <h1>END OF SERVICES</h1>
+          <p>
+            It is with a mix of emotions that we announce the end of SenpAI.GG
+            services. You may uninstall the app.
+          </p>
+        </div>
+        <div id="text-tr">
+          <img
+            style="border-radius: 50%; height: 1.4rem"
+            src="./images/tr.svg"
+          />
+          <h1>HİZMETLERİN SONU</h1>
+          <p>
+            SenpAI.GG hizmetlerinin sona erdiğini üzülerek bildiriyoruz.
+            Uygulamayı kaldırabilirsiniz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
