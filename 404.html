@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>SenpAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./styles/font.css" />
     <link rel="stylesheet" type="text/css" href="./styles/titleBar.css" />
     <style>
@@ -23,14 +24,18 @@
         max-width: 80rem;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
       }
       .text-block {
         flex: 1;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         border: 1px solid #93beff;
         border-radius: 20px;
+        min-width: 30rem;
         margin: 10px;
-        height: 30rem;
+        height: 31rem;
+        overflow-y: auto;
       }
       p {
         font-size: 18px;
@@ -44,6 +49,15 @@
         border-radius: 50%;
         height: 1.4rem;
         margin-right: 0.5rem;
+      }
+      @media screen and (max-width: 767px) {
+        .text-block {
+          min-width: 90%;
+          height: auto;
+        }
+        .main {
+          position: inherit;
+        }
       }
     </style>
   </head>
